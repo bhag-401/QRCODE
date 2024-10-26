@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001122;
+}
+
+.box {
+    background-color: #155e75;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qr-header h1 {
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.qr-header input,
+.qr-header select {
+    width: 100%;
+    padding: 8px;
+    margin-block: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #7fb7c9;
+}
+
+.qr-header label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.qr-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qr-footer > button {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.qr-footer > button:hover {
+    background-color: #dcdcdc;
+}
+
+.qr-body {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .qr-footer > button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .qr-header h1 {
+        font-size: 22px;
+    }
+
+    .qr-header label,
+    .qr-header input,
+    .qr-header select {
+        font-size: 16px;
+    }
+}
